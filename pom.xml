@@ -17,20 +17,23 @@
         <module>blog_commons</module>
         <module>blog_core</module>
         <module>blog_web</module>
+        <module>blog_admin_rest</module>
+        <module>blog_portal_rest</module>
     </modules>
     <name>queuepop_blog</name>
     <description>queuepop blog system</description>
     <packaging>pom</packaging>
 
     <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
         <alibaba.fastjson.version>2.0.12</alibaba.fastjson.version>
-        <mybatis.plus.boot.starter.version>3.1.2</mybatis.plus.boot.starter.version>
-        <druid.version>1.1.8</druid.version>
-        <Hutool.version>4.6.4</Hutool.version>
-        <qiniu.version>[7.2.0, 7.2.99]</qiniu.version>
-        <springBootAdmin.version>2.2.1</springBootAdmin.version>
-        <JustAuth.version>1.15.1</JustAuth.version>
-        <minio.version>7.1.4</minio.version>
+        <mybatis.plus.boot.starter.version>3.5.2</mybatis.plus.boot.starter.version>
+        <druid.version>1.2.11</druid.version>
+        <Hutool.version>5.8.5</Hutool.version>
     </properties>
 
     <dependencies>
@@ -91,8 +94,8 @@
         </dependency>
 
         <dependency>
-            <groupId></groupId>
-            <artifactId>log4j2</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
         </dependency>
 
         <dependency>
